@@ -14,24 +14,28 @@ include 'db.php'
 
 <body>
     <header>
-        <h1>
-            Music
-        </h1>
+        <div class="container">
+            <h1>
+                Music
+            </h1>
+        </div>
     </header>
 
 
     <main>
-        <div class="card">
-            <?php foreach ($albums as $album) { ?>
-
-                <img src=<?php echo $album['cover'] ?> alt="cover">
-
-                <h2><?php echo $album['title'] ?></h2>
-                <h2><?php echo $album['author'] ?></h2>
-                <h2><?php echo $album['year'] ?></h2>
-                <h2><?php echo $album['genre'] ?></h2>
-            <?php  } ?>
-        </div>
+        <?php foreach ($albums as $album) { ?>
+            <div class="card">
+                <div class="cover">
+                    <img src=<?php echo $album['cover'] ?> alt="cover">
+                </div>
+                <div class="info-album">
+                    <h2><?php echo $album['title'] ?></h2>
+                    <h2><?php echo $album['author'] ?></h2>
+                    <h2><?php echo $album['year'] ?></h2>
+                    <h2><?php echo $album['genre'] ?></h2>
+                </div>
+            </div>
+        <?php  } ?>
     </main>
     <footer>
 

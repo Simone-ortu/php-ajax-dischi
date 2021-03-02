@@ -1,15 +1,23 @@
 main{
     width: 80%;
+    margin: 50px auto;
      display: flex;
      justify-content: space-around;
      flex-direction: row;
      flex-wrap: wrap;
      .card{
-         height: 800px;
+         width: calc(80% / 2);
+         
          display: flex;
          justify-content: space-around;
-         flex-direction: row;
+         flex-direction: column;
          flex-wrap: wrap;
+        }
+        .cover{
+            margin: auto;
+        }
+        .info-album{
+            margin: auto;
+        }
 
-     }
 }

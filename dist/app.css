@@ -9,24 +9,38 @@ body {
 }
 
 header {
+  width: 100%;
+  background-color: #333333;
+}
+header .container {
   width: 80%;
   margin: 0 auto;
+  height: 150px;
 }
-header h1 {
+header .container h1 {
   text-align: center;
+  line-height: 150px;
+  color: white;
 }
 
 main {
   width: 80%;
+  margin: 50px auto;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
 main .card {
-  height: 800px;
+  width: calc(80% / 2);
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+main .cover {
+  margin: auto;
+}
+main .info-album {
+  margin: auto;
 }
