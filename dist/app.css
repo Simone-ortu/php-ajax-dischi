@@ -33,6 +33,7 @@ main {
 }
 main .card {
   width: calc(80% / 2);
+  height: 400px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -40,6 +41,13 @@ main .card {
 }
 main .cover {
   margin: auto;
+}
+main .cover img {
+  border-radius: 20px;
+}
+main .cover :hover {
+  box-shadow: 3px 4px 2px black;
+  border-radius: 20px;
 }
 main .info-album {
   margin: auto;

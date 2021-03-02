@@ -7,14 +7,22 @@ main{
      flex-wrap: wrap;
      .card{
          width: calc(80% / 2);
-         
+         height: 400px;
          display: flex;
          justify-content: space-around;
          flex-direction: column;
          flex-wrap: wrap;
+         
         }
         .cover{
             margin: auto;
+            img{
+                border-radius: 20px;
+            }
+            :hover{
+                box-shadow: 3px 4px 2px black;
+                border-radius: 20px;
+            }
         }
         .info-album{
             margin: auto;
