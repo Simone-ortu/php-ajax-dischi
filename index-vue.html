@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/app.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Music</h1>
+        </div>
+    </header>
+    <main>
+    <div id="app" class="card">
+        <!-- Disco ad esempio -->
+        <div v-for='album in albums'>
+            <div class="cover">
+                <img :src="album.cover" alt="">
+            </div>
+            <div class="info-album">
+                <h3>{{album.title}}</h3>
+                <span class="author">{{album.author}}</span>
+                <span class="year">{{album.year}}</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+    <script src="js\script.js"></script>
+</body>
+
+</html>
