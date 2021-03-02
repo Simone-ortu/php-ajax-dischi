@@ -1,0 +1,15 @@
+main{
+    width: 80%;
+     display: flex;
+     justify-content: space-around;
+     flex-direction: row;
+     flex-wrap: wrap;
+     .card{
+         height: 800px;
+         display: flex;
+         justify-content: space-around;
+         flex-direction: row;
+         flex-wrap: wrap;
+
+     }
+}
